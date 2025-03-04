@@ -1,0 +1,13 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://assets.vogue.in/photos/5ce447cd1dc2679d0cc7ae2e/master/pass/This-is-how-you-roadtrip-across-Norway.jpg');
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.open-modal {
+    visibility: visible;
+    z-index: 10;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="/style/scroll.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header id="home" class="w-[100%] h-[100px] bg-white">
+                <div class="nav-header">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Spotify_icon.svg/1200px-Spotify_icon.svg.png" alt="" class="w-[70px] h-[70px]">
+                    <div class="hamburger">
+                        <button class="line"><i class="fa fa-bars"></i></button>
+                    </div>
+                    <!-- <nav id="navbar"> -->
+                        <div class="nav-bar">
+                            <ul class="nav-bar-ul">
+                                <li><a onclick="scrollToAnchor()" id="home" href="#home" class="scroll-smooth"> Home </a></li>
+                                <li><a onclick="scrollToAnchor()" id="about" href="#about" class="scroll-smooth"> About </a></li>
+                                <li><a onclick="scrollToAnchor()" id="services" href="" class="scroll-smooth"> Services </a></li>
+                                <li><a onclick="scrollToAnchor()" id="tour" href="" class="scroll-smooth"> Tour </a></li>
+                            </ul>
+                        </div>
+                    <!-- </nav> -->
+                </div>
+        <div class="background w-[100%] h-[500px] banner flex justify-center items-center">
+            <div class="container text-center text-white">
+                <h1 class="font-extrabold text-[50px] uppercase"> Scroll project </h1>
+                <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab nostrum consequatur asperiores eligendi soluta odit provident? Quae, rerum, quam exercitationem consequuntur ea nisi magnam veritatis, molestiae architecto ipsam natus voluptatem! </p>
+                <button class="border-2 border-white rounded-xl p-2 mt-5 uppercase hover:text-green-400 hover:bg-white duration-300"> explore tour </button>
+            </div>
+        </div>
+        <div> <!-- da capire come dare l'animazione quando effettuo il primo scroll -->
+            <button id="myBtn" class="fixed bottom-[40px] right-[30px] cursor-pointer rounded-xl text-white bg-gradient-to-b bg-green-400 text-center items-center justify-center opacity-100 w-[50px] h-[50px] hover:scale-[1.2] duration-700"><i class="fa fa-arrow-up"></i></button>
+        </div>
+
+        <section id="about" class="section w-[100%] h-[700px] bg-white uppercase font-extrabold text-[30px] text-center">
+            <h1 class="title"> About <span class="text-green-400"> us </span></h1>
+        </section>
+        <section id="services" class="section w-[100%] h-[700px] bg-[#f1f1f1]  uppercase font-extrabold text-[30px] text-center">
+            <h1 class="title"> Our <span class="text-green-400"> services </span></h1>
+        </section>
+        <section id="about" class="section w-[100%] h-[700px] bg-[#fff] uppercase font-extrabold text-[30px] text-center">
+            <h1 class="title"> About <span class="text-green-400"> us </span></h1>
+        </section>
+        <section id="about" class="section w-[100%] h-[700px] bg-[#f1f1f1] uppercase font-extrabold text-[30px] text-center">
+            <h1 class="title"> About <span class="text-green-400"> us </span></h1>
+        </section>  
+  
+    </header>
+    <script src="/js/scroll.js"></script>
+</body>
+</html>

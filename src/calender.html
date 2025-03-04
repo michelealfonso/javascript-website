@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="/style/calender.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="contianer">
+            <div class="calendar">
+              <div class="calendar-header">
+                <span id="month-picker" class="month-picker"></span>
+                <div class="year-picker" id="year-picker">
+                  <span class="year-change" id="pre-year">
+                    <button><i class="fa-solid fa-chevron-left"></i></button>
+                  </span>
+                  <span id="year"> 2023 </span>
+                  <span class="year-change" id="next-year">
+                    <button class=""><i class="fa-solid fa-chevron-right"></i></button>
+                  </span>
+                </div>
+              </div>
+       
+                <div class="calendar-body">
+                    <div class="calendar-week-days">
+                    <div>Lun</div>
+                    <div>Mar</div>
+                    <div>Mer</div>
+                    <div>Gio</div>
+                    <div>Ven</div>
+                    <div>Sab</div>
+                    <div>Dom</div>
+                    </div>
+                    <div class="calendar-days"></div>
+                </div>
+
+                <div class="calendar-footer"></div>
+                    <div class="date-time-formate">
+                    <div class="day-text-formate"> oggi </div>
+                    <div class="date-time-value">
+                    <div class="time-formate"></div>
+                    <div class="date-formate"></div>
+                    </div>
+                </div>
+              <div class="month-list"></div>
+            </div>
+          </div>
+    </header>
+    <script src="/js/calender.js"></script>
+</body>
+</html>

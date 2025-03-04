@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.nav-header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    padding: 20px;
+}
+
+.hamburger {
+    color: black;
+    display: none;
+}
+
+.hamburger:hover {
+    color: rgb(74 222 128)
+}
+
+.nav-bar {
+    color: white;
+}
+
+.nav-bar-ul {
+    display: flex;
+}
+
+.nav-bar-ul li {
+    margin: 15px;
+    font-weight: 700;
+}
+
+.nav-bar-ul li:hover {
+    color: rgb(74 222 128);
+}
+
+@media only screen and (max-width: 1280px) {
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        margin-right: 40px;
+    }
+
+    .nav-header {
+        background-color: white;
+    }
+
+    .nav-bar {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        height: 0;
+        background-color: white;
+        transition-duration: 700ms;
+        overflow: hidden;
+    }
+
+    .nav-bar.active {
+        height: 250px; 
+    }
+
+    .nav-bar-ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: fit-content;
+        margin: 0 auto 0 auto;
+        transition: 0.5s;
+        opacity: 0;
+        color: black;
+    }
+
+    .nav-bar.active ul {
+        opacity: 1;
+    }
+}
+
+.nav-header.sticky  {
+    background-color: white;
+    transition: 0.5s;
+}
+
+.nav-header.sticky ul {
+    color: black;
+}
+
+.background {
+    background-image: url('https://www.state.gov/wp-content/uploads/2018/11/Norway-2560x1328.jpg');
+    background-repeat: no-repeat;
+}

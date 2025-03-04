@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body class="bg-gray-400">
+    <nav>
+        <div class="nav-center h-[50px] flex justify-center items-center bg-white shadow-sm shadow-black">
+            <h4 class="mx-10 text-sky-400"> Color Flipper </h4>
+            <ul class=" nav-links flex">
+                <li class="mx-10">
+                    <a href="index.html" class=""> Simple </a>
+                </li>
+                <li class="mx-10">
+                    <a href="hex.html" class=""> Hex </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container h-[500px] flex flex-col justify-center items-center">
+        <h2 class=" flex items-center justify-center h-[100px] w-[auto] bg-black text-white text-center rounded-xl"> Background color: 
+            <span class="color text-sky-400 m-5">
+                #f1f5f8
+            </span>
+        </h2>
+        <button id="btn" onclick="click()" class="btn border-4 border-black p-3 rounded-xl m-5 hover:bg-black hover:text-white duration-500"> Click me </button>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

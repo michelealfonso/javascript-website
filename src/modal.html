@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="/style/modal.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header class="hero flex flex-col justify-center items-center w-[600px] h-[300px] mt-[200px] bg-white rounded-xl">
+        <div class="bunner">
+            <h1 class="font font-extrabold text-[50px]"> Modal project </h1>
+            <div class="flex justify-center items-center mt-4">
+                <button class="modal-btn border-2 border-green-400 text-center px-3 bg-green-400 rounded-full text-white uppercase hover:scale-125 duration-700"> Open Modal </button>
+            </div>
+        </div>
+    </header>
+        <div class="modal-overlay flex justify-center items-center fixed top-0 left-0 w-[100%] h-[100%] bg-bg-color invisible -z-10 place-items-center">
+            <div class="modal-container flex justify-center items-center w-[600px] h-[300px] bg-white rounded-xl">
+            <h3 class="font font-extrabold"> Modal content </h3>
+            <button class="close-btn absolute inline-flex top-60 right-[500px] text-red-500 text-[30px] hover:scale-125 duration-500"><i class="fa fa-close"></i></button>
+            </div>
+    </div>
+    <script src="/js/modal.js"></script>
+</body>
+</html>
